@@ -1,0 +1,4 @@
+<input #chosenIncrement (keyup.enter)="selectIncrement(chosenIncrement.value)" type="number" placeholder="Choose an increment"/>
+<button (click)="selectIncrement(chosenIncrement.value)">Submit</button>
+<p>{{numberStart}}</p>
+<button (click)="incrementNumberStart()">+{{incrementBy}}</button>
