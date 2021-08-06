@@ -1,4 +1,11 @@
+<!--this input/button combo allows the user to select an increment value, and then sets that increment
+as the value of our incrementBy variable using the selectIncrement function from the 
+TS class-->
 <input #chosenIncrement (keyup.enter)="selectIncrement(chosenIncrement.value)" type="number" placeholder="Choose an increment"/>
 <button (click)="selectIncrement(chosenIncrement.value)">Submit</button>
+<!--renders the numberStart variable from the TS class-->
 <p>{{numberStart}}</p>
+<!--increments the numberStart variable using the incrementNumberStart function from
+the TS class in the click event. It also renders the incrementBy variable to display
+the actual current increment value-->
 <button (click)="incrementNumberStart()">+{{incrementBy}}</button>

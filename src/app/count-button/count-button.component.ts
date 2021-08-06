@@ -9,14 +9,19 @@ export class CountButtonComponent implements OnInit {
 
   constructor() { }
 
+  //numberStart variable
   numberStart: number = 0;
+  //incrementBy variable
   incrementBy: number = 1;
 
+  //this function increments the numberStart variable
   incrementNumberStart(): void {
     //same as this.numberStart = this.numberStart + 1
     this.numberStart += this.incrementBy
   }
 
+  //this function reassigns the user inputted increment as the value of our 
+  //incrementBy variable
   selectIncrement(newIncrement): void {
     this.incrementBy = Number(newIncrement);
   }
